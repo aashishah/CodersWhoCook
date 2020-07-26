@@ -1,13 +1,12 @@
-<html>
+html>
   <head>
     <meta charset="UTF-8">
     <title>Sign-in</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">    
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://use.fontawesome.com/26cced8d82.js"></script>
-        <script src="jquery-3.5.1.min.js"></script>
-        <script src ="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src ="script.js"></script>
   </head>
   <body>
     <nav>
@@ -19,34 +18,18 @@
           <li><a href="sign-up.html">Sign-up</a></li>
       </ul>
   </nav>
-    <div id="content">
-    <h1 class="landing-text">Hi there!</h1>
-    <h2 class="landing-text">Create a new account</h2>
-    <div id="new-user">
-          <form>
-              <label for="fname">First Name:</label>
-              <input type="text" id="first-name" name="first-name"><br><br>
-              <label for="lname">Last Name:</label>
-              <input type="text" id="last-name" name="last-name"><br><br>
-              <label for="email">Email:</label>
-              <input type="text" id="email" name="email"><br><br>
-              <label for="gender">Gender:</label>
-              <input type="text" id="gender" name="gender"><br><br>
-              <label for="country">Country:</label>
-              <input type="text" id="country" name="country"><br><br>
-              <label for="language">Coding Language:</label>
-              <input type="text" id="language" name="language"><br><br>
-              <label for="food">Cuisine:</label>
-              <input type="text" id="food" name="food"><br><br>
-              <p>Please select your years of experience with programming:</p>
-              <input type="radio" id="exp-1" name="exp" value="30">
-              <label for="age1">0-1 yrs</label><br>
-              <input type="radio" id="exp-2" name="exp" value="60">
-              <label for="age2">2-5 yrs</label><br>  
-              <input type="radio" id="exp-3" name="exp" value="100">
-              <label for="age3">5+ yrs</label><br><br>
-              <button type="submit">Create account!</button></p>
-          </form>
-        </div>
-      </div>
+  <div id="content">
+  <h1>Hi there!</h1>
+  <h2>Log-in</h2>
+  <div id="log-in">
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="text" id="password" name="password"><br><br>
+      <button type="submit" id="login-click">Log in!</button>
+    </form>
+  </div>
+  </div>
   </body>
+</html>
