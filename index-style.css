@@ -8,7 +8,7 @@ body {
 
 /*-----------NAVBAR-----------*/
 nav {
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh; 
@@ -16,8 +16,10 @@ nav {
 }
 
 .logo img{
-    height: 55px;
-    margin: 5px;
+    height: 65px;
+    margin: 10px 10px 10px 80px;
+    float: left;
+    position: relative;
 }
 
 .nav-links a{
@@ -42,9 +44,12 @@ nav {
     transform: scale
 }
 .nav-links{
-   display: flex;
-    width: 40%;
+   float: right;
+    width: 20%;
+    display: flex;
     justify-content: space-around;
+    margin-right: 40px;
+    margin-top: 30px;
 }
 
 /*-----------MAIN-------*/
@@ -57,14 +62,32 @@ nav {
     height: 92vh;
     margin: 0px 10px 10px;
     background: #ff512f;
-    background: -webkit-linear-gradient(to right, #ff512f, #f09819);
-    background: linear-gradient(to right, #ff512f, #f09819);
+    background: -webkit-linear-gradient(-45deg, #ff512f, #f09819);
+    background: linear-gradient(-45deg, #ff512f, #f09819);
+    animation: gradient 10s ease infinite;
+    background-size:  300% 300%;
     border-radius: 50px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
 }
 
 .landing-text {
     margin: 40px;
     color: white;
+    width: 40%;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 
 }
 .landing-text > span{
@@ -72,10 +95,23 @@ nav {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
 }
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
 .landing-img img{
-    width: 400px;
+    width: 550px;
     height: auto;
     margin: 20px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 }
 /**header**/
 
@@ -107,15 +143,16 @@ div > h2{
     width: 250px;
     height: 250px;
     text-align: center;
-    font-size: 20px;
+    font-size: 19px;
     border-radius: 50px;
-    box-shadow: 5px 5px rgb(63, 59, 59, 0.25);
+    padding: 7px;
+    box-shadow: 5px 5px rgb(63, 59, 59, 0.5);
 }
 
 .steps > h4{
     font-size: 30px;
     font-weight: 700;
-    color: black;
+    color: #649097;
 }
 
 /*----FOOTER---*/
