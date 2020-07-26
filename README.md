@@ -1,2 +1,5 @@
 # CodersWhoCook
-HobbyHacks hack.
+Pitch:
+CodersWhoCook is a webapp that connects coders on the basis of everyone's one true love- Food! A user can create an account and set their preferences- Coding languages and Cuisines they adore. Once they are set up, they are redirected to their dashboard where they can opt to match with another user on the basis of their preferences. 
+We use data analysis using ML and Python, to find a matches of the user. The algorithm we have crafted gives results in percantages, to help find the closest match. This is done so that when we add more variables eventually, and the matching becomes more complex we can implement this algorithm.
+Once matched, the users are c=given a recipie from their shared tastes. They can connect virtually and have a cooking/dining session of this prepared meal. This is used as an ice-breaker of sorts, and then the matched users can talk code/help with study or interview prep. It is a casual app for meeting new coders with the goal of removing any awkwardness, since cooking is a fun activity.
