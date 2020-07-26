@@ -67,6 +67,18 @@ nav {
     color: white;
 
 }
+
+form {
+    margin: 40px;
+}
+.acct {
+   
+
+}
+#content1>.landing-text{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+}
 .landing-text > span{
     font-size: 60px;
     font-family: 'Poppins', sans-serif;
